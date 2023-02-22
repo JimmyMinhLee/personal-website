@@ -1,18 +1,24 @@
 import { extendTheme } from "@chakra-ui/react";
-import { theme as chakraTheme } from "@chakra-ui/react";
 
-const fonts = {
-  body: `Inter`,
-};
-const color = {
+const customTheme = {
   initialColorMode: "dark",
   useSystemColorMode: false,
+  textStyles: {
+    h1: {
+      // you can also use responsive styles
+      fontSize: ["120px", "120px"],
+      fontWeight: "bold",
+      lineHeight: "110000%",
+      letterSpacing: "-2%",
+    },
+    h2: {
+      fontSize: ["36px", "48px"],
+      fontWeight: "semibold",
+      lineHeight: "110%",
+      letterSpacing: "-1%",
+    },
+  },
 };
 
-const themeOverrides = {
-  ...chakraTheme,
-  fonts,
-  color,
-};
-const theme = extendTheme({ themeOverrides });
+const theme = extendTheme({ customTheme });
 export default theme;

@@ -7,7 +7,7 @@ const Home = () => {
       <Box>
         First with a lot of text that might go all the way to the end of the
         screen?
-        <Text>More text</Text>
+        <Box textStyle="h1">This is a box</Box>
         <Text>More text</Text>
         <Text>More text</Text>
         <Text>More text</Text>
