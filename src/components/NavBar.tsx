@@ -1,20 +1,12 @@
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Link,
-  Button,
   useColorModeValue,
-  Stack,
   useColorMode,
-  Center,
   Spacer,
   Text,
   Container,
-  VStack,
-  HStack,
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "../ColorModeSwitcher";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { IconButton } from "@chakra-ui/react";
@@ -45,7 +37,6 @@ const ThemeToggleButton = () => {
 };
 
 export default function Nav() {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
       <Box
@@ -59,21 +50,22 @@ export default function Nav() {
         <Container
           display="flex"
           p={2}
-          maxW="container.md"
+          maxW="6xl"
           justifySelf="center"
           alignSelf={"center"}
         >
           <Flex align="center">
-            <Box pr={2}>
-              <Text fontSize={"xl"}> jimmyminhlee</Text>
+            <Box>
+              <Text fontSize={"2xl"}> jimmyminhlee</Text>
+            </Box>
+            <Box p={2} pl={4}>
+              <Text fontSize={"md"}> experiences </Text>
+            </Box>{" "}
+            <Box p={2} pl={4}>
+              <Text fontSize={"md"}> dotfiles </Text>
             </Box>
           </Flex>
-          <Box p={2} pl={4}>
-            <Text fontSize={"md"}> experiences </Text>
-          </Box>{" "}
-          <Box p={2} pl={4}>
-            <Text fontSize={"md"}> dotfiles </Text>
-          </Box>
+
           <Spacer></Spacer>
           <ThemeToggleButton />
         </Container>

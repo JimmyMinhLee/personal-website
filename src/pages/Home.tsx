@@ -1,24 +1,14 @@
-import { Box, Text, VStack } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "../ColorModeSwitcher";
+import { Box, Flex, Text, VStack } from "@chakra-ui/react";
+import RoundedImage from "../components/RoundedImage";
 const Home = () => {
   return (
-    <VStack>
-      <ColorModeSwitcher></ColorModeSwitcher>
+    <VStack pt={16} maxWidth="6xl">
+      <Flex>
+        <RoundedImage />
+        <Text> This will be the first section. </Text>
+      </Flex>
       <Box>
-        First with a lot of text that might go all the way to the end of the
-        screen?
-        <Box textStyle="h1">This is a box</Box>
-        <Text>More text</Text>
-        <Text>More text</Text>
-        <Text>More text</Text>
-        <Text>More text</Text>
-        <Text>More text</Text>
-        <Text>More text</Text>
-        <Text>More text</Text>
-      </Box>
-
-      <Box>
-        <Text>Second text</Text>
+        <Text> This will be the second section. </Text>
       </Box>
     </VStack>
   );
