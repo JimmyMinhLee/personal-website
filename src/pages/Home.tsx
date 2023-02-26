@@ -1,4 +1,5 @@
 import {
+  Spacer,
   Container,
   Box,
   Card,
@@ -10,6 +11,7 @@ import {
   Heading,
   Divider,
   useColorModeValue,
+  HStack,
 } from "@chakra-ui/react";
 
 import GlanceItems from "../components/AtAGlanceItems";
@@ -83,7 +85,7 @@ const AtAGlance = () => {
   return (
     <Container maxWidth="6xl">
       <Heading variant="section-heading" size="md">
-        bio
+        at a glance
       </Heading>
     </Container>
   );
@@ -92,11 +94,10 @@ const AtAGlance = () => {
 const Home = () => {
   return (
     <>
-      <VStack pt={24} maxWidth="2xl" spacing={8}>
+      <VStack pt={24} maxWidth="2xl" spacing={8} bg="gray">
         <Introduction />
         <Divider />
         <IntroCard />
-        <AtAGlance />
         <GlanceItems />
       </VStack>
     </>

@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
-import { StepsTheme as Steps } from "chakra-ui-steps";
 import { mode } from "@chakra-ui/theme-tools";
+import { StepsTheme as Steps } from "chakra-ui-steps";
+
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: false,
@@ -24,6 +25,35 @@ const components = {
         textDecoration: "underline",
         fontSize: 60,
         textUnderlineOffset: 6,
+        textDecorationColor: "#525252",
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4,
+      },
+
+      "section-heading": {
+        textDecoration: "underline",
+        fontSize: 40,
+        textUnderlineOffset: 4,
+        textDecorationColor: "#525252",
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4,
+      },
+
+      "subsection-heading": {
+        textDecoration: "underline",
+        fontSize: 25,
+        textUnderlineOffset: 2.5,
+        textDecorationColor: "#525252",
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4,
+      },
+      "mini-heading": {
+        textDecoration: "underline",
+        fontSize: 20,
+        textUnderlineOffset: 0.5,
         textDecorationColor: "#525252",
         textDecorationThickness: 4,
         marginTop: 3,
