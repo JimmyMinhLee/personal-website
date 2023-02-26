@@ -1,5 +1,6 @@
 import {
   Box,
+  Heading,
   Flex,
   useColorModeValue,
   useColorMode,
@@ -49,19 +50,28 @@ export default function Nav() {
         <Container
           display="flex"
           pt={2}
-          maxW="6xl"
+          maxW="4xl"
           justifySelf="center"
           alignSelf={"center"}
         >
-          <Flex align="center">
+          <Flex align="center" justifyContent={"space-around"}>
             <Box>
-              <Text fontSize={"2xl"}> jimmyminhlee</Text>
+              <Heading fontSize={"3xl"}> jimmy lee</Heading>
             </Box>
             <Box p={2} pl={4}>
-              <Text fontSize={"md"}> experiences </Text>
-            </Box>{" "}
+              <Text fontSize={"md"}> about </Text>
+            </Box>
             <Box p={2} pl={4}>
-              <Text fontSize={"md"}> dotfiles </Text>
+              <Text fontSize={"md"}> pictures </Text>
+            </Box>
+            <Box p={2} pl={4}>
+              <Text fontSize={"md"}> experience </Text>
+            </Box>
+            <Box p={2} pl={4}>
+              <Text fontSize={"md"}> projects </Text>
+            </Box>
+            <Box p={2} pl={4}>
+              <Text fontSize={"md"}> writing </Text>
             </Box>
           </Flex>
 

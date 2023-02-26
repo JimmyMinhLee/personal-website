@@ -1,5 +1,6 @@
 import { Image } from "@chakra-ui/react";
 import MyImage from "./images/image.jpg";
+
 const RoundedImage = () => {
   return (
     <Image

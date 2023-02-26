@@ -1,10 +1,20 @@
 import { extendTheme } from "@chakra-ui/react";
-
-const customTheme = {
+import { mode } from "@chakra-ui/theme-tools";
+const config = {
   initialColorMode: "dark",
   useSystemColorMode: false,
-  textStyles: {},
 };
 
-const theme = extendTheme({ customTheme });
+const styles = {
+  global: (props: Object) => ({
+    "html, body": {
+      background: mode("#white", "#202023")(props),
+    },
+  }),
+};
+const fonts = {
+  heading: "'M PLUS Rounded 1c'",
+};
+
+const theme = extendTheme({ config, fonts, styles });
 export default theme;
