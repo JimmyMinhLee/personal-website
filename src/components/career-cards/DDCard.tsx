@@ -23,6 +23,7 @@ const DDCard = () => {
       size="sm"
       bg={useColorModeValue("#fcfcfc", "#202023")}
       direction={"row"}
+      pt={2}
     >
       <CardHeader>
         <Heading variant="subsection-heading"> {year}</Heading>

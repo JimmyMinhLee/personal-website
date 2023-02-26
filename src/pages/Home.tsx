@@ -16,6 +16,7 @@ import {
 
 import GlanceItems from "../components/AtAGlanceItems";
 import profilePicture from "../components/images/jimmy.jpg";
+import AnimatedSection from "../components/AnimatedSection";
 
 const Introduction = () => {
   return (
@@ -61,11 +62,16 @@ const IntroCard = () => {
 const Home = () => {
   return (
     <>
-      <VStack pt={24} maxWidth="3xl" spacing={8}>
-        <Introduction />
-        <IntroCard />
-        <Divider />
-      </VStack>
+      <AnimatedSection
+        child={
+          <VStack pt={24} maxWidth="3xl" spacing={8}>
+            <Introduction />
+            <IntroCard />
+            <Divider />
+          </VStack>
+        }
+        delay={0.2}
+      />
       <GlanceItems />
     </>
   );

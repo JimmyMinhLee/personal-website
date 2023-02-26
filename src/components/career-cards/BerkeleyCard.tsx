@@ -8,6 +8,7 @@ import {
   Box,
   useColorModeValue,
 } from "@chakra-ui/react";
+import AnimatedSection from "../AnimatedSection";
 
 const BerkeleyCard = () => {
   const year = "2022";
