@@ -43,13 +43,12 @@ export default function Nav() {
         position="fixed"
         as="nav"
         w="100%"
-        bg={useColorModeValue("#ffffff40", "#20202380")}
-        css={{ backdropFilter: "blur(10px)" }}
+        css={{ backdropFilter: "blur(50px)" }}
         zIndex={2}
       >
         <Container
           display="flex"
-          p={2}
+          pt={2}
           maxW="6xl"
           justifySelf="center"
           alignSelf={"center"}
