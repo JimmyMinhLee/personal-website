@@ -48,46 +48,13 @@ const Introduction = () => {
   );
 };
 
-const Currently = () => {
-  return (
-    <Flex maxWidth="6xl">
-      <Box>
-        <Heading
-          as="h6"
-          variant="section-title"
-          bgGradient="linear(to-l, #F88CA7, #FFFCA7)"
-          bgClip="text"
-        >
-          what am i currently doing?
-        </Heading>
-      </Box>
-      <Box>
-        <Text> This is a box on the side of the original heading. </Text>
-      </Box>
-    </Flex>
-  );
-};
-
 const IntroCard = () => {
   return (
-    <Card m={4} mt={2} bg={useColorModeValue("#ebe7df", "#2e2e2d")}>
+    <Card px={12} bg={useColorModeValue("#ebe7df", "#2e2e2d")}>
       <CardBody>
-        <Text>
-          hello and welcome to my personal website. this is where i put my
-          accomplishments, future works, and random miscellaneous things.
-        </Text>
+        <Text>°˖✧◝(⁰▿⁰)◜✧˖° welcome to my website!</Text>
       </CardBody>
     </Card>
-  );
-};
-
-const AtAGlance = () => {
-  return (
-    <Container maxWidth="6xl">
-      <Heading variant="section-heading" size="md">
-        at a glance
-      </Heading>
-    </Container>
   );
 };
 
