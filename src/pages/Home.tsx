@@ -29,7 +29,6 @@ const Introduction = () => {
       <Box p={4} pl={12}>
         <Heading
           as="h6"
-          variant="section-title"
           bgGradient={useColorModeValue(
             "linear(to-l, #000000, #0063d1)",
             "linear(to-l, #F88CA7, #FFFCA7)"
@@ -83,8 +82,8 @@ const IntroCard = () => {
 const AtAGlance = () => {
   return (
     <Container maxWidth="6xl">
-      <Heading as="h1" size="lg">
-        at a glance:
+      <Heading variant="section-heading" size="md">
+        bio
       </Heading>
     </Container>
   );
