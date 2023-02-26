@@ -94,12 +94,12 @@ const AtAGlance = () => {
 const Home = () => {
   return (
     <>
-      <VStack pt={24} maxWidth="2xl" spacing={8} bg="gray">
+      <VStack pt={24} maxWidth="3xl" spacing={8}>
         <Introduction />
-        <Divider />
         <IntroCard />
-        <GlanceItems />
+        <Divider />
       </VStack>
+      <GlanceItems />
     </>
   );
 };
