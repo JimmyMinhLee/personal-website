@@ -17,6 +17,7 @@ import {
 import GlanceItems from "../components/AtAGlanceItems";
 import profilePicture from "../components/images/jimmy.jpg";
 import AnimatedSection from "../components/AnimatedSection";
+import MyCareer from "../components/AtAGlanceItems";
 
 const Introduction = () => {
   return (
@@ -72,7 +73,7 @@ const Home = () => {
         }
         delay={0.2}
       />
-      <GlanceItems />
+      <MyCareer />
     </>
   );
 };

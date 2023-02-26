@@ -5,7 +5,7 @@ import PlaystationCard from "./career-cards/PlaystationCard";
 import RedCard from "./career-cards/RedCard";
 import RidgelineCard from "./career-cards/RidgelineCard";
 import AnimatedSection from "../components/AnimatedSection";
-const Bio = () => {
+const MyCareer = () => {
   return (
     <AnimatedSection
       child={
@@ -31,7 +31,4 @@ const Bio = () => {
     />
   );
 };
-const GlanceItems = () => {
-  return <Bio />;
-};
-export default GlanceItems;
+export default MyCareer;
