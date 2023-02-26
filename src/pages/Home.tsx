@@ -1,21 +1,19 @@
 import {
+  Container,
   Box,
-  Wrap,
   Card,
   CardBody,
-  Spacer,
   Flex,
   Text,
   VStack,
   Avatar,
-  WrapItem,
   Heading,
   Divider,
   useColorModeValue,
-  useColorMode,
 } from "@chakra-ui/react";
+
+import GlanceItems from "../components/AtAGlanceItems";
 import profilePicture from "../components/images/jimmy.jpg";
-import secondProfilePicture from "../components/images/jimmy2.jpg";
 
 const Introduction = () => {
   return (
@@ -81,6 +79,17 @@ const IntroCard = () => {
     </Card>
   );
 };
+
+const AtAGlance = () => {
+  return (
+    <Container maxWidth="6xl">
+      <Heading as="h1" size="lg">
+        at a glance:
+      </Heading>
+    </Container>
+  );
+};
+
 const Home = () => {
   return (
     <>
@@ -88,6 +97,8 @@ const Home = () => {
         <Introduction />
         <Divider />
         <IntroCard />
+        <AtAGlance />
+        <GlanceItems />
       </VStack>
     </>
   );
