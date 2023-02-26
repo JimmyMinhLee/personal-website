@@ -69,7 +69,7 @@ const Currently = () => {
   );
 };
 
-const WhatCanIHelpYouWith = () => {
+const IntroCard = () => {
   return (
     <Card m={4} mt={2} bg={useColorModeValue("#ebe7df", "#2a3b59")}>
       <CardBody>
@@ -87,7 +87,7 @@ const Home = () => {
       <VStack pt={24} maxWidth="2xl" spacing={8}>
         <Introduction />
         <Divider />
-        <WhatCanIHelpYouWith />
+        <IntroCard />
       </VStack>
     </>
   );
