@@ -1,6 +1,4 @@
 import {
-  Spacer,
-  Container,
   Box,
   Card,
   CardBody,
@@ -11,13 +9,11 @@ import {
   Heading,
   Divider,
   useColorModeValue,
-  HStack,
 } from "@chakra-ui/react";
 
-import GlanceItems from "../components/AtAGlanceItems";
 import profilePicture from "../components/images/jimmy.jpg";
 import AnimatedSection from "../components/AnimatedSection";
-import MyCareer from "../components/AtAGlanceItems";
+import MyCareer from "../components/Career";
 
 const Introduction = () => {
   return (
@@ -41,7 +37,7 @@ const Introduction = () => {
         >
           who am i?
         </Heading>
-        <Text fontSize="xl">jimmy minh lee, software engineer @ doordash</Text>
+        <Text fontSize="xl"> jimmy minh lee - a little too silly </Text>
         <Text fontSize="md">
           perfecting my craft, becoming a master of something
         </Text>

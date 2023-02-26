@@ -7,6 +7,7 @@ import {
   Spacer,
   Text,
   Container,
+  Link,
 } from "@chakra-ui/react";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -56,14 +57,18 @@ export default function Nav() {
         >
           <Flex align="center" justifyContent={"space-around"}>
             <Box>
-              <Heading fontSize={"3xl"}> jimmy lee</Heading>
+              <Link href="/" color={useColorModeValue("black", "white")}>
+                <Heading fontSize={"3xl"}> jimmy lee</Heading>
+              </Link>
             </Box>
             <Box p={2} pl={4}>
               <Text fontSize={"md"}> about </Text>
             </Box>
-            <Box p={2} pl={4}>
-              <Text fontSize={"md"}> pictures </Text>
-            </Box>
+            <Link href="/pictures" color={useColorModeValue("black", "white")}>
+              <Box p={2} pl={4}>
+                <Text fontSize={"md"}> pictures </Text>
+              </Box>
+            </Link>
             <Box p={2} pl={4}>
               <Text fontSize={"md"}> experience </Text>
             </Box>
