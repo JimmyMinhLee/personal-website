@@ -12,8 +12,10 @@ import {
   Heading,
   Divider,
   useColorModeValue,
+  useColorMode,
 } from "@chakra-ui/react";
 import profilePicture from "../components/images/jimmy.jpg";
+import secondProfilePicture from "../components/images/jimmy2.jpg";
 
 const Introduction = () => {
   return (
@@ -69,7 +71,7 @@ const Currently = () => {
 
 const WhatCanIHelpYouWith = () => {
   return (
-    <Card m={4} mt={2} bg={useColorModeValue("#a9ad68", "#2a3b59")}>
+    <Card m={4} mt={2} bg={useColorModeValue("#ebe7df", "#2a3b59")}>
       <CardBody>
         <Text>
           hello and welcome to my personal website. this is where i put my
