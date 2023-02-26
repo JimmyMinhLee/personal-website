@@ -71,7 +71,7 @@ const Currently = () => {
 
 const IntroCard = () => {
   return (
-    <Card m={4} mt={2} bg={useColorModeValue("#ebe7df", "#2a3b59")}>
+    <Card m={4} mt={2} bg={useColorModeValue("#ebe7df", "#2e2e2d")}>
       <CardBody>
         <Text>
           hello and welcome to my personal website. this is where i put my

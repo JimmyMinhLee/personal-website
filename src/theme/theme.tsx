@@ -8,7 +8,7 @@ const config = {
 const styles = {
   global: (props: Object) => ({
     "html, body": {
-      background: mode("#white", "#202023")(props),
+      background: mode("#fcfcfc", "#202023")(props),
     },
   }),
 };
