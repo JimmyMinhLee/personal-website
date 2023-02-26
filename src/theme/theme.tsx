@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { StepsTheme as Steps } from "chakra-ui-steps";
 import { mode } from "@chakra-ui/theme-tools";
 const config = {
   initialColorMode: "dark",
@@ -28,36 +29,8 @@ const components = {
         marginTop: 3,
         marginBottom: 4,
       },
-
-      "section-heading": {
-        textDecoration: "underline",
-        fontSize: 40,
-        textUnderlineOffset: 4,
-        textDecorationColor: "#525252",
-        textDecorationThickness: 4,
-        marginTop: 3,
-        marginBottom: 4,
-      },
-
-      "subsection-heading": {
-        textDecoration: "underline",
-        fontSize: 25,
-        textUnderlineOffset: 2.5,
-        textDecorationColor: "#525252",
-        textDecorationThickness: 4,
-        marginTop: 3,
-        marginBottom: 4,
-      },
-      "mini-heading": {
-        textDecoration: "underline",
-        fontSize: 20,
-        textUnderlineOffset: 0.5,
-        textDecorationColor: "#525252",
-        textDecorationThickness: 4,
-        marginTop: 3,
-        marginBottom: 4,
-      },
     },
+    Steps,
   },
   Link: {
     baseStyle: (props: Object) => ({
