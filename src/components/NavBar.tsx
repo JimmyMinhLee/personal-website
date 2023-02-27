@@ -38,6 +38,49 @@ const ThemeToggleButton = () => {
   );
 };
 
+const ItemsListFull = () => {
+  return (
+    <Flex
+      display={{ base: "none", lg: "flex" }}
+      align="center"
+      justifyContent={"space-around"}
+    >
+      <Box>
+        <Link href="/" color={useColorModeValue("black", "white")}>
+          <Heading fontSize={"3xl"}> jimmy lee</Heading>
+        </Link>
+      </Box>
+      <Link href="/pictures" color={useColorModeValue("black", "white")}>
+        <Box p={2} pl={4}>
+          <Text fontSize={"md"}> pictures </Text>
+        </Box>
+      </Link>
+      <Box p={2} pl={4}>
+        <Text fontSize={"md"}> experience </Text>
+      </Box>
+      <Box p={2} pl={4}>
+        <Text fontSize={"md"}> projects </Text>
+      </Box>
+      <Box p={2} pl={4}>
+        <Text fontSize={"md"}> writing </Text>
+      </Box>
+    </Flex>
+  );
+};
+const ItemsListAbridged = () => {
+  return (
+    <Container
+      display={{ base: "inline-block", lg: "none" }}
+      justifyContent={"space-around"}
+    >
+      <Box>
+        <Link href="/" color={useColorModeValue("black", "white")}>
+          <Heading fontSize={"3xl"}> jimmy lee</Heading>
+        </Link>
+      </Box>
+    </Container>
+  );
+};
 export default function Nav() {
   return (
     <>
@@ -55,28 +98,8 @@ export default function Nav() {
           justifySelf="center"
           alignSelf={"center"}
         >
-          <Flex align="center" justifyContent={"space-around"}>
-            <Box>
-              <Link href="/" color={useColorModeValue("black", "white")}>
-                <Heading fontSize={"3xl"}> jimmy lee</Heading>
-              </Link>
-            </Box>
-            <Link href="/pictures" color={useColorModeValue("black", "white")}>
-              <Box p={2} pl={4}>
-                <Text fontSize={"md"}> pictures </Text>
-              </Box>
-            </Link>
-            <Box p={2} pl={4}>
-              <Text fontSize={"md"}> experience </Text>
-            </Box>
-            <Box p={2} pl={4}>
-              <Text fontSize={"md"}> projects </Text>
-            </Box>
-            <Box p={2} pl={4}>
-              <Text fontSize={"md"}> writing </Text>
-            </Box>
-          </Flex>
-
+          <ItemsListFull />
+          <ItemsListAbridged />
           <Spacer></Spacer>
           <ThemeToggleButton />
         </Container>

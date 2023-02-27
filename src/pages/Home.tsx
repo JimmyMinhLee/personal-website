@@ -38,7 +38,7 @@ const Introduction = () => {
           who am i?
         </Heading>
         <Text fontSize="xl"> jimmy minh lee - a little too silly </Text>
-        <Text fontSize="md">
+        <Text display={{ base: "none", lg: "flex" }} fontSize="md">
           perfecting my craft, becoming a master of something
         </Text>
       </Box>
