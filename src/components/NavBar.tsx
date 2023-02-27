@@ -61,9 +61,6 @@ export default function Nav() {
                 <Heading fontSize={"3xl"}> jimmy lee</Heading>
               </Link>
             </Box>
-            <Box p={2} pl={4}>
-              <Text fontSize={"md"}> about </Text>
-            </Box>
             <Link href="/pictures" color={useColorModeValue("black", "white")}>
               <Box p={2} pl={4}>
                 <Text fontSize={"md"}> pictures </Text>
