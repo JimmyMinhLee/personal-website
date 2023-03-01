@@ -20,8 +20,6 @@ import anotherPicture from "../components/images/picture.jpg";
 
 type ImageCardProps = {
   image: string;
-  date: string;
-  description: string;
 };
 
 const Introduction = () => {
@@ -66,44 +64,42 @@ const IntroCard = () => {
 };
 
 const ImageCard = (props: ImageCardProps) => {
-  const { image, date, description } = props;
+  const { image } = props;
   return (
-    <Card bg={useColorModeValue("#ebe7df", "#2e2e2d")}>
-      <CardBody>
-        <Image
-          maxWidth={"33vw"}
-          maxHeight={"33vh"}
-          boxSize={"33vh"}
-          objectFit={"cover"}
-          borderRadius={"lg"}
-          src={image}
-        />{" "}
-        <HStack>
-          <Heading pt={4} size="sm" fontFamily={"M Plus Rounded 1c"}>
-            {date}
-          </Heading>
-          <Text fontSize="sm">{description}</Text>
-        </HStack>
-      </CardBody>
-    </Card>
+    <>
+      <Image
+        maxWidth={"33vw"}
+        maxHeight={"33vh"}
+        boxSize={"33vh"}
+        objectFit={"cover"}
+        borderRadius={"lg"}
+        src={image}
+      />
+    </>
   );
 };
 
 const Images = () => {
   return (
-    <VStack>
-      <HStack maxWidth="4xl">
-        <ImageCard
-          image={profilePicture}
-          date={"2023-03-15"}
-          description={"san-diego.png"}
-        />
-        <ImageCard
-          image={otherPicture}
-          date={"2023-01-15"}
-          description={"new-orleans.png"}
-        />
-      </HStack>
+    <VStack pt={8}>
+      <Flex maxWidth="6xl">
+        <ImageCard image={profilePicture} />
+        <ImageCard image={profilePicture} />
+        <ImageCard image={otherPicture} />
+        <ImageCard image={otherPicture} />
+      </Flex>
+      <Flex maxWidth="6xl">
+        <ImageCard image={profilePicture} />
+        <ImageCard image={profilePicture} />
+        <ImageCard image={otherPicture} />
+        <ImageCard image={otherPicture} />
+      </Flex>
+      <Flex maxWidth="6xl">
+        <ImageCard image={profilePicture} />
+        <ImageCard image={profilePicture} />
+        <ImageCard image={otherPicture} />
+        <ImageCard image={otherPicture} />
+      </Flex>
     </VStack>
   );
 };
@@ -114,7 +110,6 @@ const Pictures = () => {
       <VStack maxWidth="3xl" pt={24} spacing={8}>
         <Introduction />
         <IntroCard />
-
         <Divider />
       </VStack>
       <Images />
